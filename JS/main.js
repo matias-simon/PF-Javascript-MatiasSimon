@@ -215,7 +215,7 @@ const getCharacters = async () => {
     <img class= "card-img-top" src="${character.image}" />
     <div class="card-body">
     <h5 class="card-title">${character.name}</h5>
-      <h6 class="card title">${character.gender}</h6>
+      <h6 class="card-title">${character.gender}</h6>
       <p class="card-text">${character.status}</p>
       <hr />
     </div>
