@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon's Guitars</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+      <div class="container-fluid ">
+          
+            <a class="navbar-brand" href="#main"><img class="gtr-brand"src="./img/guitar.png" alt=""> Simon's Guitars</a>
+          
+          
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#main">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#guitarras">Guitarras Acusticas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bajos">Bajos Acusticos</a>
+            </li>
+          </ul>
+          <a class="nav-link me-3" href=""data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart cart-nav" ></i><span id="cant"></span></a>
+        
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Offcanvass -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito <i class="bi bi-cart" ></i></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-0 m-0">
+      <p class="m-3">Productos</p>
+      <div class="carrito" id= "carrito"></div>
+      <div class="wrapper">
+      <div id="btn-pagar"class="pagar "><a><h2>Pagar</h2></a></div>
+      <div class="total">
+          <div class="carrito-total p-3"><h2>Total:</h2></div>
+          <div class="carrito-valor p-3"><h2 id="carritoTotal"></h2></div>
+      </div>  
+     </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="billingModal" tabindex="-1" aria-labelledby="billingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="billingModalLabel">Ingrese sus Datos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Direccion</label>
+            <textarea class="form-control" id="address" required></textarea>
+          </div>
+        
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-dark" id="saveBillingDetails">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+  <section id="main">
+    <div class="container-fluid main">
+      <h1>Simon's Guitars</h1>
+    </div>
+  </section>
+
+<!-- Guitarras -->
+
+  <section id="guitarras">
+    <div class="container-fluid guitarras">
+      <div class="row">
+        
+          <h2>Guitarras Acusticas</h2>
+          
+      </div>
+      <div class="container">
+      <div id="gtr-cards"class="row row-cols-1 row-cols-md-3 g-4">
+        
+    </div>
+        </div>
+     </div>
+      
+    </div>
+  </section>
+
+  <!-- Bajos -->
+
+  <section id="bajos">
+    <div class="container-fluid bajos">
+      <div class="row">
+          <h2>Bajos Acusticos</h2>
+          
+      </div>
+      <div class="container">
+      <div id="bajo-cards" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- API -->
+
+  <section>
+    <div class="container-fluid api ">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="mb-5">API RICK AND MORTY</h2>
+          </div>
+          <div class="container">
+            <div id="api" class="row row-cols-1 row-cols-md-3 g-4">
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./JS/productos.js"></script>
+  <script src="./JS/main.js"></script>
+</body>
+</html>

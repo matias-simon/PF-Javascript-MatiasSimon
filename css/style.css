@@ -1,0 +1,220 @@
+.navbar{
+  background-color: #121212;
+}
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  font-family: 'Pacifico';
+  font-size: 3vw;
+  width:fit-content;
+  text-shadow: -1px -1px 3px #7d7a7a, 
+      2px 2px 4px #767474;
+}
+
+.nav-link{
+  font-family: 'Montserrat';
+  text-align: right;
+  color: #fafafa;
+}
+.gtr-brand{
+  filter: invert(100%);
+  width: 6vw;
+}
+.cart-nav{
+  color: #fafafa;
+  font-size: 2rem;
+}
+.cart-nav:hover{
+  color: #b2b2b2; 
+
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/C2845HQhUYoWYJK3zMkKiX.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.main h1{
+  color: #fafafa;
+  font-family: 'Pacifico';
+  font-size: 16vw;
+  text-align: center;
+  text-shadow: -1px -1px 3px #4b4a4a, 
+      2px 2px 4px #3c3c3c;
+}
+.guitarras{
+  min-height:100vh;
+  background-image: url(../img/acusticas-background.avif);
+  background-position: center center;
+  background-attachment: fixed;
+}
+.guitarras h2{
+  margin-top: 100px;
+  text-decoration: underline;
+  color: #121212;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 6rem;
+  text-shadow: -1px -1px 3px #7d7a7a, 
+      2px 2px 4px #767474;
+}
+.gtr-img{
+  height: auto;
+  padding: 50px;
+  
+}
+.card-guitarra{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(20%, 20%, 20%, 0.1);
+  text-align: center;
+  margin-top: 50px;
+  border-radius:50px;
+
+}
+
+.bajos{
+  min-height: 100vh;
+  background-image: url(../img/bajos-background.jpeg);
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.bajos h2{
+  margin-top: 100px;
+  text-decoration: underline;
+  color: #fafafa;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 6rem;
+  text-shadow: -1px -1px 3px #7d7a7a, 
+      2px 2px 4px #767474;
+}
+ 
+.card-bajo{
+  padding: 50px;
+  background-color: rgba(20%, 20%, 20%, 0.1);
+  border: solid #fafafa;
+  color: #fafafa;
+  text-align: center;
+  margin-top: 50px;
+  border-radius:50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bajo-img{
+  margin-bottom: 50px;
+}
+
+
+.offcanvas-body, .offcanvas-title{
+  font-family: 'Montserrat';
+
+}
+.offcanvas-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#cant{
+  color: #fafafa;
+}
+.total{
+  display: flex;
+  flex-direction: row;
+}
+
+.pagar{
+  font-family: 'Montserrat';
+  color: #fafafa;
+  background-color: #b90d0d;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  cursor: pointer;
+}
+.pagar a{
+  text-decoration: none;
+  color: #fafafa;
+}
+.pagar:hover{
+  background-color: #9f0909;
+}
+.carrito-total{
+  height: auto;
+  /* place-items: center; */
+  width:30%;
+  background-color: #121212;
+  color: #fafafa;
+  font-family: 'Pacifico';
+}
+.carrito-valor{
+  color: #121212;
+    background-color: #fafafa;
+    font-family: 'Montserrat';
+    text-align: center;
+    width: 68%;
+    display: inline-block;
+}
+
+.img-carrito{
+width: 60%;
+}
+
+.carrito{
+  height:80vh;
+  overflow-y:auto;
+}
+
+.container-carrito{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.producto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-carrito{
+  width: 50%;
+}
+
+.api{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url(../img/rickandmorty.png);
+}
+
+.api h2{
+  margin-top: 100px;
+  text-decoration: underline;
+  color: #fafafa;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 6rem;
+  text-shadow: -1px -1px 3px #7d7a7a, 
+      2px 2px 4px #767474;
+}
